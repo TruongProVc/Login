@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+
+    <div class="form-container">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="text" id="username" placeholder="Username" required>
+          </div>
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="login-btn">Đăng nhập</button>
+        </form>
+        <div class="register-link">
+          <p>Bạn chưa có mật khẩu? Hãy nhấn vào <a href="#" id="showRegister">Register</a></p>
+        </div>
+      </div>
+
+      <div class="register-container" style="display: none;">
+        <h2>Đăng kí</h2>
+        <form id="registerForm">
+          <div class="input-group">
+            <input type="text" id="regUsername" placeholder="Username" required>
+          </div>
+          <div class="input-group">
+            <input type="email" id="regEmail" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" id="regPassword" placeholder="Password" required>
+          </div>
+          <button type="submit" class="login-btn">Đăng ký</button>
+        </form>
+        <div class="register-link">
+          <p>Đã có tài khoản? Hãy nhấn vào <a href="#" id="showLogin">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
